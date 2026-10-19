@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "Registered hospital patients and user profile data",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "phone": { "type": "string" },
+        "age": { "type": "number" },
+        "gender": { "type": "string" },
+        "address": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "displayName"]
+    },
+    "appointments": {
+      "title": "OPD Appointments",
+      "description": "Patient appointment bookings and schedules",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "referenceNumber": { "type": "string" },
+        "userId": { "type": "string" },
+        "patientName": { "type": "string" },
+        "patientPhone": { "type": "string" },
+        "patientEmail": { "type": "string" },
+        "patientAge": { "type": "number" },
+        "patientGender": { "type": "string" },
+        "departmentId": { "type": "string" },
+        "departmentName": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "doctorTitle": { "type": "string" },
+        "doctorSpecialty": { "type": "string" },
+        "doctorImage": { "type": "string" },
+        "date": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "consultationFee": { "type": "number" },
+        "visitReason": { "type": "string" },
+        "symptoms": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["referenceNumber", "userId", "patientName", "patientPhone", "doctorId", "doctorName", "date", "timeSlot"]
+    }
+  }
+}

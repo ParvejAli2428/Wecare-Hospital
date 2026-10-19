@@ -1,0 +1,6 @@
+{
+  "name": "WeCare Hospitals",
+  "description": "Modern clean hospital website for WeCare Hospitals with departments, doctor profiles, and online appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
